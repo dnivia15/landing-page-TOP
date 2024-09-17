@@ -2,25 +2,69 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Header of the website */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin:0;
+    padding:0;
+    margin-bottom:10px;
+}
+
+/* Section One of the page */
+
 .section-one{
     background-color: #0F0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .left-side{
-    background-color: #F00;
     margin: 25px;
+    width:350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mainText{
+    background-color: #F00;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.subText{
+    font-size: 15px;
+} 
+
+button{
+    /* this works in order to prevent from growing */
+    align-self: flex-start;
+    width: 100px;
 }
 
 .imgPlaceholder{
     /* gray color for the place holder */
     background-color: #AAA;
-    width:300px;
+    width:400px;
     height:200px;
     margin: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+
+/* section two of the page */
+.section-two{
+    display: flex;
+    flex-direction: row;
 }
